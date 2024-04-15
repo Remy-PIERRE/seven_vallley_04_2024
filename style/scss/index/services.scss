@@ -1,0 +1,14 @@
+@import "../components/serviceCard.scss";
+
+.services--container {
+    background: var(--bg-main);
+}
+
+.services--wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}

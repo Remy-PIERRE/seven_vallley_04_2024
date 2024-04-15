@@ -1,0 +1,59 @@
+
+// SIZE //
+.font-size-smaller {
+    font-size: 0.6rem;
+}
+
+.font-size-small {
+    font-size: 0.8rem;
+}
+
+.font-size-medium {
+    font-size: 1rem;
+}
+
+.font-size-large {
+    font-size: 1.2rem;
+}
+
+.font-size-larger {
+    font-size: 1.4rem;
+}
+
+// TITLE //
+.title-size-small {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.title-size-medium {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.title-size-larger {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+// WEIGHT //
+.font-weight-bold {
+    font-weight: bold;
+}
+
+// COLOR //
+.font-color-white {
+    color: var(--text-white);
+}
+
+.font-color-black {
+    color: var(--text-black);
+}
+
+.font-color-grey {
+    color: var(--text-grey);
+}
+
+.font-color-main {
+    color: var(--text-main-light);
+}

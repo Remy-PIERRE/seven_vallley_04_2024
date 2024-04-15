@@ -1,0 +1,33 @@
+:root {
+    --text-black: #333;
+    --text-grey: #666;
+    --text-white: #fff;
+    --text-main: #000a4a;
+    --text-main-light: #6e54ff;
+    --text-secondary: #06e7e3;
+
+    --bg-white: #fff;
+    --bg-white-dark: #f6f6f6;
+    --bg-main: #000a4a;
+    --bg-main-light: #3d47c2;
+    --bg-secondary: #06e7e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
