@@ -16,6 +16,21 @@
     cursor: pointer;
 }
 
+.btn-details {
+    width: 100%;
+    padding: 12px 0px;
+    background: var(--bg-white-dark);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.activated {
+        background: var(--bg-white);
+    }
+}
+
 
 // SIZE //
 .btn-size-small {

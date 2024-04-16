@@ -58,14 +58,20 @@
     justify-content: flex-start;
   }
 }
-.hero--content--formations {
+.hero--content--formations, .hero--content--formationDetails {
   width: clamp(200px, 100%, 640px);
   margin: auto;
   flex-grow: 0;
 }
-.hero--content--formations h1 {
+.hero--content--formations h1, .hero--content--formationDetails h1 {
   text-align: center;
 }
-.hero--content--formations p {
+.hero--content--formations p, .hero--content--formationDetails p {
   text-align: center;
+}
+
+.hero--content--formationDetails .hero--cta--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=hero.css.map */

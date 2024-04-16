@@ -17,6 +17,20 @@
   cursor: pointer;
 }
 
+.btn-details {
+  width: 100%;
+  padding: 12px 0px;
+  background: var(--bg-white-dark);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-details.activated {
+  background: var(--bg-white);
+}
+
 .btn-size-small {
   padding: 4px 12px;
   font-size: 0.8rem;

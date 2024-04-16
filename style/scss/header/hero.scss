@@ -68,7 +68,7 @@
 }
 
 // FORMATIONS //
-.hero--content--formations {
+.hero--content--formations, .hero--content--formationDetails {
     width: clamp(200px, 100%, 640px);
     margin: auto;
     flex-grow: 0;
@@ -79,5 +79,14 @@
 
     p {
         text-align: center;
+    }
+}
+
+// FORMATION DETAILS //
+.hero--content--formationDetails {
+    .hero--cta--container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
