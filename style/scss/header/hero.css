@@ -57,4 +57,15 @@
   .hero--cta--container {
     justify-content: flex-start;
   }
+}
+.hero--content--formations {
+  width: clamp(200px, 100%, 640px);
+  margin: auto;
+  flex-grow: 0;
+}
+.hero--content--formations h1 {
+  text-align: center;
+}
+.hero--content--formations p {
+  text-align: center;
 }/*# sourceMappingURL=hero.css.map */

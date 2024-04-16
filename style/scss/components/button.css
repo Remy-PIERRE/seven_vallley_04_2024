@@ -8,6 +8,15 @@
   cursor: pointer;
 }
 
+.btn-filter {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 100px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
 .btn-size-small {
   padding: 4px 12px;
   font-size: 0.8rem;

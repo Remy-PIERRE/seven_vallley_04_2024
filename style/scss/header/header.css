@@ -197,6 +197,18 @@
     justify-content: flex-start;
   }
 }
+.hero--content--formations {
+  width: clamp(200px, 100%, 640px);
+  margin: auto;
+  flex-grow: 0;
+}
+.hero--content--formations h1 {
+  text-align: center;
+}
+.hero--content--formations p {
+  text-align: center;
+}
+
 .header--main--container {
   background: var(--bg-main-light);
 }
@@ -207,7 +219,7 @@
 }
 .header--bottom img {
   height: 150px;
-  min-width: 100vw;
+  width: 100vw;
   -o-object-fit: fill;
      object-fit: fill;
 }/*# sourceMappingURL=header.css.map */

@@ -1,10 +1,9 @@
 .formationCard--container {
-  width: 250px;
+  width: clamp(100px, 70%, 250px);
   background: var(--bg-white);
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  justify-self: center;
 }
 
 .formationCard--top {
@@ -43,4 +42,25 @@
   display: flex;
   align-items: center;
   gap: 8px;
-}/*# sourceMappingURL=formationCard.css.map */
+}
+
+.grid--wrapper {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 769px) {
+  .grid--wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 976px) {
+  .grid--wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}/*# sourceMappingURL=grid.css.map */
