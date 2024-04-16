@@ -80,3 +80,20 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width: 679px) {
+    .carroussel--cards {
+        width: calc(100% / 2 * 5);        
+    }
+}
+
+@media (min-width: 976px) {
+    .carrousel--button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .carroussel--cards {
+        width: calc(100% / 3 * 5);        
+    }
+}

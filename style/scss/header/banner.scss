@@ -40,6 +40,22 @@
     display: none;
 }
 
+@media (min-width: 769px) {
+    .banner--wrapper {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .banner--content {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .user--container {
+        display: block;
+    }
+}
+
 // @media (min-width: 976px) {
 //     .banner--left {
 //         justify-content: start;

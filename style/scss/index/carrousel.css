@@ -1,0 +1,131 @@
+.formationCard--container {
+  width: clamp(100px, 70%, 250px);
+  background: var(--bg-white);
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.formationCard--top {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.formationCard--top img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.formationCard--bottom {
+  padding: 20px 12px 12px;
+}
+.formationCard--bottom h3 {
+  margin-bottom: 12px;
+}
+.formationCard--bottom > p {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.formationCard--footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formationCard--duration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.formationsIntra--container {
+  background: var(--bg-white-dark);
+}
+
+.coursEnLigne--container {
+  background: var(--bg-main-light);
+}
+
+.formationsIntra--wrapper, .coursEnLigne--wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.formationsIntra--wrapper h2, .coursEnLigne--wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.formationsIntra--wrapper > p, .coursEnLigne--wrapper > p {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.carrousel--container {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.carrousel--buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.carrousel--button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carrousel--button:nth-child(1) {
+  transform: rotate(180deg);
+}
+
+.carrousel--screen {
+  width: 100%;
+  position: relative;
+}
+
+.carroussel--cards {
+  width: 500%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.carroussel--cards > .formationCard--container {
+  justify-self: center;
+}
+
+.formationsIntra--cta--container, .coursEnLigne--cta--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 679px) {
+  .carroussel--cards {
+    width: 250%;
+  }
+}
+@media (min-width: 976px) {
+  .carrousel--button {
+    width: 32px;
+    height: 32px;
+  }
+  .carroussel--cards {
+    width: 166.6666666667%;
+  }
+}/*# sourceMappingURL=carrousel.css.map */

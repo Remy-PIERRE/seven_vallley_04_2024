@@ -1,0 +1,19 @@
+.section--wrapper {
+  max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+
+@media (min-width: 769px) {
+  .section--wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 967px) {
+  .section--wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}/*# sourceMappingURL=section.css.map */

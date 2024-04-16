@@ -1,12 +1,21 @@
-@import "./banner.scss";
-@import "./menu.scss";
-@import "./hero.scss";
+@use './banner.scss';
+@use './menu.scss';
+@use './hero.scss';
 
 .header--main--container {
     background: var(--bg-main-light);
 }
 
+.header--bottom {
+    width: 100%;
+    height: 150px;
 
+    img {
+        height: 150px;
+        min-width: 100vw;
+        object-fit: fill;
+    }
+}
 
 
 

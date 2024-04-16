@@ -64,28 +64,28 @@
         display: none;
     }
 
-    .header--logo {
+    .menu--wrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu--logo {
         height: 60px;
-    }
-
-    .header--nav--wrapper {
-        padding: 12px 20px;
+    }    
     
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-
-            a {
-                width: fit-content;
-                padding: 4px 12px;
-                font-size: 1rem;
-                font-weight: bold;
-                color: var(--text-white);
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-            }
-        }
+    .menu--nav--desktop {
+        display: flex;
+        align-items: center;
+        gap: 12px;
     }
+
+    .menu--link--desktop {
+        width: fit-content;
+        padding: 4px 4px;
+        font-weight: bold;
+        color: var(--text-white);
+        display: flex;
+        align-items: center;
+    }
+    
 }

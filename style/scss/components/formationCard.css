@@ -1,0 +1,45 @@
+.formationCard--container {
+  width: clamp(100px, 70%, 250px);
+  background: var(--bg-white);
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.formationCard--top {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.formationCard--top img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.formationCard--bottom {
+  padding: 20px 12px 12px;
+}
+.formationCard--bottom h3 {
+  margin-bottom: 12px;
+}
+.formationCard--bottom > p {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.formationCard--footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formationCard--duration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}/*# sourceMappingURL=formationCard.css.map */

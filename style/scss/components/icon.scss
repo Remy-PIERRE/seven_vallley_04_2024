@@ -25,3 +25,17 @@
         width: auto;
     }
 }
+
+@media (min-width: 769px) {
+    .icon-size-smaller {
+        img {
+            height: 16px;
+        }
+    }
+
+    .icon-size-small {
+        img {
+            height: 24px;
+        }
+    }
+}

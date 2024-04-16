@@ -28,8 +28,40 @@
     justify-content: center;
     
     img {
-        width: 80%;
+        width: clamp(200px, 80%, 400px);
         height: auto;
         object-fit: contain;
+    }
+}
+
+@media (min-width: 769px) {}
+
+@media (min-width: 976px) {
+    .about--wrapper {
+        flex-wrap: nowrap;
+    }
+
+    .about--content {
+        flex-grow: 1;
+    
+        h2 {
+            text-align: start;
+            margin-bottom: 32px;
+        }
+    
+        p {
+            text-align: start;
+            margin-bottom: 16px;
+        }
+    }
+
+    .about--image {
+        width: clamp(500px, 50%, 600px);
+        
+        img {
+            width: 80%;
+            height: auto;
+            object-fit: contain;
+        }
     }
 }

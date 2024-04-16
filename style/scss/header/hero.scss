@@ -29,42 +29,40 @@
 }
 
 @media (min-width: 976px) {
-    .header--hero--wrapper {
-        padding: 60px 20px;
+    .hero--wrapper {
+        flex-wrap: nowrap;
+        gap: 100px;
     }
 
     .hero--content--container {
-        width: 50%;
-        align-items: start;
-    
+        flex-grow: 1;
+
         h1 {
-            font-size: 2.4rem;
-            margin-bottom: 32px;
             text-align: start;
         }
     
         p {
-            font-size: 1.4rem;
-            margin-bottom: 60px;
             text-align: start;
         }
     }
 
-    .hero--cta--container {
-        button {
-            padding: 12px 24px;
-            font-weight: bold;
+    .hero--image--container {
+        width: clamp(450px, 80%, 550px);
+        aspect-ratio: 1 / 1;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
     }
 
-    .hero--image--container {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        img {
-            max-width: 500px;
-        }
+    .hero--cta--container {
+        justify-content: flex-start;
     }
 }

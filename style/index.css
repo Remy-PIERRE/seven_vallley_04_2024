@@ -71,6 +71,14 @@ body {
   display: none;
 }
 
+@media (min-width: 769px) {
+  .banner--content {
+    justify-content: flex-start;
+  }
+  .user--container {
+    display: block;
+  }
+}
 .menu--wrapper {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -222,9 +230,8 @@ body {
 .avantages--wrapper {
   padding-top: 20px;
   padding-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 40px;
 }
 
@@ -233,6 +240,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-self: center;
 }
 
 .avantage--top {
@@ -258,11 +266,14 @@ body {
   line-height: 1.4;
 }
 
+@media (min-width: 769px) {
+  .avantages--wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (min-width: 976px) {
   .avantages--wrapper {
-    padding: 40px 20px;
-    flex-direction: row;
-    justify-content: space-around;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .formationCard--container {
@@ -381,6 +392,20 @@ body {
   justify-content: center;
 }
 
+@media (min-width: 679px) {
+  .carroussel--cards {
+    width: 250%;
+  }
+}
+@media (min-width: 976px) {
+  .carrousel--button {
+    width: 32px;
+    height: 32px;
+  }
+  .carroussel--cards {
+    width: 166.6666666667%;
+  }
+}
 .serviceCard--container {
   width: clamp(150px, 75%, 300px);
   padding: 32px 20px 24px;
@@ -423,12 +448,21 @@ body {
 .services--wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 40px;
 }
 
+@media (min-width: 769px) {
+  .services--wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 976px) {
+  .services--wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .about--wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -457,11 +491,35 @@ body {
   justify-content: center;
 }
 .about--image img {
-  width: 80%;
+  width: clamp(200px, 80%, 400px);
   height: auto;
   object-fit: contain;
 }
 
+@media (min-width: 976px) {
+  .about--wrapper {
+    flex-wrap: nowrap;
+  }
+  .about--content {
+    flex-grow: 1;
+  }
+  .about--content h2 {
+    text-align: start;
+    margin-bottom: 32px;
+  }
+  .about--content p {
+    text-align: start;
+    margin-bottom: 16px;
+  }
+  .about--image {
+    width: clamp(500px, 50%, 600px);
+  }
+  .about--image img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+  }
+}
 .footer--top {
   position: relative;
   top: 4px;
@@ -589,6 +647,18 @@ body {
   margin: auto;
 }
 
+@media (min-width: 769px) {
+  .section--wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 967px) {
+  .section--wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .btn-cta {
   width: fit-content;
   border: none;

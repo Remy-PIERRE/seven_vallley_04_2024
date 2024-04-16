@@ -1,0 +1,50 @@
+.avantages--wrapper {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+
+.avantage--container {
+  width: clamp(100px, 75%, 250px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.avantage--top {
+  width: 100px;
+  height: 100px;
+  border: 4px outset var(--bg-main);
+  border-radius: 100px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.avantage--top img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.avantage--bottom h2 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+.avantage--bottom p {
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media (min-width: 769px) {
+  .avantages--wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 976px) {
+  .avantages--wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=avantages.css.map */

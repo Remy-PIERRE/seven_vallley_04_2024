@@ -57,3 +57,31 @@
 .font-color-main {
     color: var(--text-main-light);
 }
+
+@media (min-width: 769px) {
+    // SIZE //
+    .font-size-smaller {
+        font-size: 0.8rem;
+    }
+
+    .font-size-small {
+        font-size: 1rem;
+    }
+
+    .font-size-medium {
+        font-size: 1.2rem;
+    }
+
+    // TITLE //
+    .title-size-small {
+        font-size: 1.4rem;
+    }
+
+    .title-size-large {
+        font-size: 2rem;
+    }
+
+    .title-size-larger {
+        font-size: 2.6rem;
+    }
+}
