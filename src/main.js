@@ -1,40 +1,29 @@
+import { initData } from "./data/main.js";
+import { initMenu } from "./menu/main.js";
+
 window.addEventListener("load", initApp);
 
-function initApp() {
-	// menu mobile buttons //
-	document
-		.querySelector("#menuMobileButton")
-		.addEventListener("click", handleMenuButtonClick);
-}
+async function initApp() {
+	// MENU MOBILE //
+	initMenu();
 
-// MENU MOBILE //
-function handleMenuButtonClick() {
-	const menuMobile = document.querySelector("#menuMobileContainer");
+	// FORMATIONS DATA //
+	const formations = await initData();
 
-	if (isMenuMobileIsOPen()) {
-		closeMenuMobile();
+	if (!formations.isFormationsValid()) {
+		console.log("No formation present !");
 	}
 
-	openMenuMobile();
+	console.log("Formations : ");
+	console.table(formations.getFormations());
 
-	// menu mobile cross button //
-	document
-		.querySelector("#menuMobileCrossButton")
-		.addEventListener("click", closeMenuMobile);
+	// GET PAGE CURRENT //
 
-	function isMenuMobileIsOPen() {
-		return menuMobile.classList.contains("opened") ? true : false;
-	}
+	// HOME PAGE //
 
-	function openMenuMobile() {
-		if (!menuMobile.classList.contains("opened")) {
-			menuMobile.classList.toggle("opened");
-		}
-	}
+	// FORMATIONS PAGE //
 
-	function closeMenuMobile() {
-		if (menuMobile.classList.contains("opened")) {
-			menuMobile.classList.toggle("opened");
-		}
-	}
+	// FORMATION DETAILS PAGE //
+
+	// FORMATION PAGE //
 }

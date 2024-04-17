@@ -1,0 +1,46 @@
+[
+	{
+		"id": 1,
+		"title": "Apprendre JavaScript",
+		"title_description":
+			"Découvrez les fondamentaux de JavaScript et développez vos compétences pour créer des applications web interactives et dynamiques. Idéal pour les débutants.",
+		"duration": {
+			"days": 2,
+			"hours": 14
+		},
+		"slug": "apprendre-javascript"
+	},
+	{
+		"id": 2,
+		"title": "Apprendre PHP",
+		"title_description":
+			"Découvrez les fondamentaux de PHP et développez vos compétences pour créer des applications web robustes. Idéal pour les débutants.",
+		"duration": {
+			"days": 1,
+			"hours": 7
+		},
+		"slug": "apprendre-php"
+	},
+	{
+		"id": 3,
+		"title": "Apprendre Flutter",
+		"title_description":
+			"Découvrez les fondamentaux de Flutter et développez vos compétences pour créer des applications mobiles interactives et dynamiques.",
+		"duration": {
+			"days": 2,
+			"hours": 14
+		},
+		"slug": "apprendre-flutter"
+	},
+	{
+		"id": 4,
+		"title": "Apprendre React",
+		"title_description":
+			"Découvrez les fondamentaux de React et développez vos compétences pour créer des applications web interactives et dynamiques. Idéal pour les débutants.",
+		"duration": {
+			"days": 5,
+			"hours": 35
+		},
+		"slug": "apprendre-react"
+	}
+]
