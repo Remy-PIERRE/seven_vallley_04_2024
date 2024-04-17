@@ -33,3 +33,6 @@
   - création .json
   - récupération des données depuis json || local storage
   - enregistrement des données dans local storage
+- carrousels (home page)
+  - distributions des données des formations
+  - animation "prev" & "next" carte

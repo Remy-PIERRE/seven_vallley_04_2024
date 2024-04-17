@@ -1,25 +1,37 @@
+import { getPageCurrent } from "./getPageCurrent/main.js";
 import { initData } from "./data/main.js";
 import { initMenu } from "./menu/main.js";
+import { initHomePage } from "./pages/home/main.js";
+import { initNavBar } from "./navBar/main.js";
 
 window.addEventListener("load", initApp);
 
 async function initApp() {
+	// ALL PAGES //
+
+	// GET PAGE CURRENT //
+	const page = getPageCurrent();
+
 	// MENU MOBILE //
 	initMenu();
+
+	// NAV BAR //
+	initNavBar(page);
 
 	// FORMATIONS DATA //
 	const formations = await initData();
 
 	if (!formations.isFormationsValid()) {
-		console.log("No formation present !");
+		return console.log("No formation present !");
 	}
 
 	console.log("Formations : ");
 	console.table(formations.getFormations());
 
-	// GET PAGE CURRENT //
-
 	// HOME PAGE //
+	if (page === "Home") {
+		initHomePage(formations);
+	}
 
 	// FORMATIONS PAGE //
 

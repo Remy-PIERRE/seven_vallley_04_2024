@@ -16,4 +16,16 @@ export class Formations {
 	getFormations() {
 		return this.formations;
 	}
+
+	getFormationsIntra() {
+		return this.formations.filter(
+			(formation) => formation["category"] === "intra"
+		);
+	}
+
+	getFormationsEnLigne() {
+		return this.formations.filter(
+			(formation) => formation["category"] === "en ligne"
+		);
+	}
 }

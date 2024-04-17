@@ -86,6 +86,10 @@
         color: var(--text-white);
         display: flex;
         align-items: center;
+
+        &.activated {
+            color: #06e7e3
+        }
     }
     
 }

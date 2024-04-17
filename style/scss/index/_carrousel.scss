@@ -41,6 +41,7 @@
     left: 0;
     top: 50%;
     transform: translate(0, -50%);
+    z-index: 1;
 }
 
 .carrousel--button {
@@ -60,13 +61,16 @@
 .carrousel--screen {
     width: 100%;
     position: relative;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 .carroussel--cards {
     width: 500%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    position: relative;
+    left: -100%;
+    transition: all 0.4s ease-in-out;
 
     & > .formationCard--container {
         justify-self: center;
@@ -95,5 +99,6 @@
 
     .carroussel--cards {
         width: calc(100% / 3 * 5);        
+        left: -33%;
     }
 }

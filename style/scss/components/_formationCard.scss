@@ -24,7 +24,10 @@
 }
 
 .formationCard--bottom {
+    height: calc(100% - 120px);
     padding: 20px 12px 12px;
+    display: flex;
+    flex-direction: column;
 
     h3 {
         margin-bottom: 12px;
@@ -37,8 +40,9 @@
 }
 
 .formationCard--footer {
+    flex-grow: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 

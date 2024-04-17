@@ -11,6 +11,36 @@
 		<link rel="stylesheet" href="./style/scss/index/index.css" />
 	</head>
 	<body>
+		<template id="templateFormationCard">
+			<a class="formationCard--container">
+				<div class="formationCard--top">
+					<img src="https://dummyimage.com/200x200/" alt="deco" />
+				</div>
+
+				<div class="formationCard--bottom">
+					<h3
+						class="title-size-smaller font-color-main formationCardTitle"></h3>
+					<p
+						class="font-size-small font-color-grey formationCardTitleDescription"></p>
+
+					<div class="formationCard--footer">
+						<div class="formationCard--duration icon-size-smaller">
+							<img src="./public/images/lhorloge_main.png" alt="icon" />
+							<p class="fonst-size-smaller font-color-main">
+								<span class="formationCardDuration"></span>h
+							</p>
+						</div>
+
+						<div class="formationCard--cta">
+							<button class="btn-cta btn-size-small btn-theme-transparent">
+								En savoir plus
+							</button>
+						</div>
+					</div>
+				</div>
+			</a>
+		</template>
+
 		<header>
 			<div class="banner--container">
 				<section class="banner--wrapper section--wrapper">
@@ -73,18 +103,34 @@
 						</div>
 
 						<nav class="menu--nav--desktop">
-							<a href="./index.html" class="menu--link--desktop">FORMATIONS</a>
-							<a href="./nos-formation.html" class="menu--link--desktop"
+							<a
+								href="./index.html"
+								class="menu--link--desktop"
+								id="linkElementDeskHome"
+								>FORMATIONS</a
+							>
+							<a
+								href="./nos-formation.html"
+								class="menu--link--desktop"
+								id="linkElementDeskFormations"
 								>COURS EN LIGNE</a
 							>
-							<a href="./formation-details.html" class="menu--link--desktop"
+							<a
+								href="./formation-details.html"
+								class="menu--link--desktop"
+								id="linkElementDeskFormationDetails"
 								>&Agrave; PROPOS</a
 							>
-							<a href="./formation-details.html" class="menu--link--desktop"
+							<a
+								href="./formation-details.html"
+								class="menu--link--desktop"
+								id="linkElementDesk"
 								>FINANCEMENT</a
 							>
 							<a href="./formation.html" class="menu--link--desktop">BLOG</a>
-							<a href="#" class="menu--link--desktop">CONTACT</a>
+							<a href="#" class="menu--link--desktop" id="linkElementDesk"
+								>CONTACT</a
+							>
 						</nav>
 					</div>
 
@@ -102,26 +148,31 @@
 								<a
 									href="./index.html"
 									class="menu--link--mobile font-size-larger font-color-black font-weight-bold"
+									id="linkElementMobileHome"
 									>FORMATIONS</a
 								>
 								<a
 									href="./nos-formation.html"
 									class="menu--link--mobile font-size-larger font-color-black font-weight-bold"
+									id="linkElementMobileFormations"
 									>COURS EN LIGNE</a
 								>
 								<a
 									href="./formation-details.html"
 									class="menu--link--mobile font-size-larger font-color-black font-weight-bold"
+									id="linkElementMobileFormationDetails"
 									>&Agrave; PROPOS</a
 								>
 								<a
 									href="#"
 									class="menu--link--mobile font-size-larger font-color-black font-weight-bold"
+									id="linkElementMobile"
 									>CONTACT</a
 								>
 								<a
 									href="#"
 									class="menu--link--mobile font-size-larger font-color-black font-weight-bold"
+									id="linkElementMobile"
 									>MON ESPACE</a
 								>
 							</nav>
@@ -226,12 +277,14 @@
 						iure modi laudantium nostrum corrupti a ea at, dolorum veniam minus!
 					</p>
 
-					<div class="carrousel--container">
+					<div class="carrousel--container" id="carrouselIntra">
 						<div class="carrousel--buttons">
-							<button class="carrousel--button btn-theme-main icon-size-small">
+							<button
+								class="carrousel--button btn-theme-main icon-size-small btn-prev">
 								<img src="./public/images/chevron_white.png" alt="icon" />
 							</button>
-							<button class="carrousel--button btn-theme-main icon-size-small">
+							<button
+								class="carrousel--button btn-theme-main icon-size-small btn-next">
 								<img src="./public/images/chevron_white.png" alt="icon" />
 							</button>
 						</div>
@@ -417,7 +470,7 @@
 						iure modi laudantium nostrum corrupti a ea at, dolorum veniam minus!
 					</p>
 
-					<div class="carrousel--container">
+					<div class="carrousel--container" id="carrouselEnLigne">
 						<div class="carrousel--buttons">
 							<button class="carrousel--button btn-theme-white icon-size-small">
 								<img src="./public/images/chevron.png" alt="icon" />

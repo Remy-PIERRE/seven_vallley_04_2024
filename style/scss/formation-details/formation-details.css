@@ -168,6 +168,9 @@ body {
     display: flex;
     align-items: center;
   }
+  .menu--link--desktop.activated {
+    color: #06e7e3;
+  }
 }
 .hero--wrapper {
   padding-top: 40px;

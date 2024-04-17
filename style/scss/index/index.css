@@ -168,6 +168,9 @@ body {
     display: flex;
     align-items: center;
   }
+  .menu--link--desktop.activated {
+    color: #06e7e3;
+  }
 }
 .hero--wrapper {
   padding-top: 40px;
@@ -345,7 +348,10 @@ body {
 }
 
 .formationCard--bottom {
+  height: calc(100% - 120px);
   padding: 20px 12px 12px;
+  display: flex;
+  flex-direction: column;
 }
 .formationCard--bottom h3 {
   margin-bottom: 12px;
@@ -356,8 +362,9 @@ body {
 }
 
 .formationCard--footer {
+  flex-grow: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -403,6 +410,7 @@ body {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
+  z-index: 1;
 }
 
 .carrousel--button {
@@ -421,12 +429,16 @@ body {
 .carrousel--screen {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .carroussel--cards {
   width: 500%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  position: relative;
+  left: -100%;
+  transition: all 0.4s ease-in-out;
 }
 .carroussel--cards > .formationCard--container {
   justify-self: center;
@@ -450,6 +462,7 @@ body {
   }
   .carroussel--cards {
     width: 166.6666666667%;
+    left: -33%;
   }
 }
 .serviceCard--container {
