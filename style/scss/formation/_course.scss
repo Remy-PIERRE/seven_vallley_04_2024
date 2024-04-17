@@ -1,0 +1,38 @@
+.course--container {
+    h2 {
+        margin-bottom: 8px;
+    }
+
+    p:nth-child(2) {
+        margin-bottom: 32px;
+    }
+}
+
+.course--iframe {
+    margin-bottom: 32px;
+
+    iframe {
+        aspect-ratio: 16 / 9;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.course--section {
+    margin-bottom: 32px;
+
+    h3 {
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin-bottom: 4px;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 976px) {
+    .course--container {
+        grid-area: 1 / 2 / 3 / 3;
+    }
+}
