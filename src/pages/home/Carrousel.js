@@ -2,13 +2,14 @@ export class Carrousel {
 	carrousel;
 	formations;
 	template = document.querySelector("#templateFormationCard");
-	index = 0;
+	index;
 	maxCardsDisplay = 5;
 	isAnimated = false;
 
 	constructor(carrousel, formations) {
 		this.carrousel = carrousel;
 		this.formations = formations;
+		this.index = this.formations.length - 1;
 
 		this.setupCards();
 		this.setupButtons();
@@ -81,8 +82,10 @@ export class Carrousel {
 		if (this.isAnimated) return;
 		this.isAnimated = true;
 
-		if (window.innerWidth < 976) {
+		if (window.innerWidth < 769) {
 			this.carrousel.querySelector(".carroussel--cards").style.left = "-200%";
+		} else if (window.innerWidth < 976) {
+			this.carrousel.querySelector(".carroussel--cards").style.left = "-100%";
 		} else {
 			this.carrousel.querySelector(".carroussel--cards").style.left = "-66.6%";
 		}
@@ -95,8 +98,10 @@ export class Carrousel {
 		this.carrousel.querySelector(".carroussel--cards").style.transition =
 			"none";
 
-		if (window.innerWidth < 976) {
+		if (window.innerWidth < 769) {
 			this.carrousel.querySelector(".carroussel--cards").style.left = "-100%";
+		} else if (window.innerWidth < 976) {
+			this.carrousel.querySelector(".carroussel--cards").style.left = "-50%";
 		} else {
 			this.carrousel.querySelector(".carroussel--cards").style.left = "-33.3%";
 		}

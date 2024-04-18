@@ -30,6 +30,10 @@ body {
   min-height: 100vh;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .banner--container {
   width: 100%;
   background: var(--bg-main);
@@ -450,9 +454,10 @@ body {
   justify-content: center;
 }
 
-@media (min-width: 679px) {
+@media (min-width: 769px) {
   .carroussel--cards {
     width: 250%;
+    left: -50%;
   }
 }
 @media (min-width: 976px) {
@@ -797,7 +802,15 @@ body {
   border: none;
   border-radius: 100px;
   white-space: nowrap;
+  background: var(--bg-white);
   cursor: pointer;
+}
+.btn-filter.all {
+  background: var(--bg-white-dark);
+}
+.btn-filter.activated {
+  background: var(--bg-main-light);
+  color: var(--text-white);
 }
 
 .btn-details {

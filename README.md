@@ -43,3 +43,9 @@
 - correction des <code>nav</code>
 - ajout de lien vers <code>formation-details.html</code> depuis la première carte de <code>nos-formations.html</code> & <code>nos-cours-en-ligne.html</code>
 - ajout de lien vers les pages correspondantes sur les différents CTA
+
+### JS
+
+- <code>nos-formations.html</code> & <code>nos-cours-en-ligne.html</code>
+  - gestion de le séléction des filtres
+  - affichage des cartes correpondant au filtre séléctionné

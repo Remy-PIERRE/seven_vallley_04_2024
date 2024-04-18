@@ -3,6 +3,7 @@ import { initData } from "./data/main.js";
 import { initMenu } from "./menu/main.js";
 import { initHomePage } from "./pages/home/main.js";
 import { initNavBar } from "./navBar/main.js";
+import { initSearchPage } from "./pages/search/main.js";
 
 window.addEventListener("load", initApp);
 
@@ -34,6 +35,9 @@ async function initApp() {
 	}
 
 	// FORMATIONS PAGE //
+	if (page === "Formations" || page === "CoursEnLigne") {
+		initSearchPage(formations);
+	}
 
 	// FORMATION DETAILS PAGE //
 

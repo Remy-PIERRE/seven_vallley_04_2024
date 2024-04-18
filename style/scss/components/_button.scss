@@ -13,7 +13,17 @@
     border: none;
     border-radius: 100px;
     white-space: nowrap;
+    background: var(--bg-white);
     cursor: pointer;
+
+    &.all {
+        background: var(--bg-white-dark);
+    }
+
+    &.activated {
+        background: var(--bg-main-light);
+        color: var(--text-white)
+    }
 }
 
 .btn-details {

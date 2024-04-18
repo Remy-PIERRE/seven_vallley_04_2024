@@ -7,7 +7,7 @@ export function initHomePage(formations) {
 	new Carrousel(carrouselIntra, formationsIntra);
 
 	// COURS EN LIGNE //
-	// const carrouselEnLigne = document.querySelector("#carrouselEnLigne");
-	// const formationsEnLigne = formations.getFormationsEnLigne();
-	// new Carrousel(carrouselEnLigne, formationsEnLigne);
+	const carrouselEnLigne = document.querySelector("#carrouselEnLigne");
+	const formationsEnLigne = formations.getFormationsEnLigne();
+	new Carrousel(carrouselEnLigne, formationsEnLigne);
 }

@@ -85,9 +85,10 @@
     justify-content: center;
 }
 
-@media (min-width: 679px) {
+@media (min-width: 769px) {
     .carroussel--cards {
-        width: calc(100% / 2 * 5);        
+        width: calc(100% / 2 * 5);   
+        left: -50%;     
     }
 }
 
