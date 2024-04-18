@@ -8,7 +8,7 @@
 			"days": 2,
 			"hours": 14
 		},
-		"slug": "/formation.html",
+		"slug": "/formation-details.html",
 		"category": "intra"
 	},
 	{
@@ -20,7 +20,7 @@
 			"days": 1,
 			"hours": 7
 		},
-		"slug": "/formation.html",
+		"slug": "/formation-details.html",
 		"category": "intra"
 	},
 	{
@@ -32,7 +32,7 @@
 			"days": 2,
 			"hours": 14
 		},
-		"slug": "/formation.html",
+		"slug": "/formation-details.html",
 		"category": "intra"
 	},
 	{
@@ -44,7 +44,7 @@
 			"days": 5,
 			"hours": 35
 		},
-		"slug": "/formation.html",
+		"slug": "/formation-details.html",
 		"category": "intra"
 	},
 	{
@@ -56,7 +56,7 @@
 			"days": 5,
 			"hours": 35
 		},
-		"slug": "/formation.html",
+		"slug": "/formation-details.html",
 		"category": "intra"
 	},
 	{
@@ -68,7 +68,7 @@
 			"days": 2,
 			"hours": 14
 		},
-		"slug": "/formation.html",
+		"slug": "/formation-details.html",
 		"category": "en ligne"
 	},
 	{
@@ -80,7 +80,7 @@
 			"days": 1,
 			"hours": 7
 		},
-		"slug": "/formation.html",
+		"slug": "/formation-details.html",
 		"category": "en ligne"
 	},
 	{
@@ -92,7 +92,7 @@
 			"days": 2,
 			"hours": 14
 		},
-		"slug": "/formation.html",
+		"slug": "/formation-details.html",
 		"category": "en ligne"
 	},
 	{
@@ -104,7 +104,7 @@
 			"days": 5,
 			"hours": 35
 		},
-		"slug": "/formation.html",
+		"slug": "/formation-details.html",
 		"category": "en ligne"
 	},
 	{
@@ -116,7 +116,7 @@
 			"days": 5,
 			"hours": 35
 		},
-		"slug": "/formation.html",
+		"slug": "/formation-details.html",
 		"category": "en ligne"
 	}
 ]

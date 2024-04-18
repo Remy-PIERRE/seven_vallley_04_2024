@@ -1,8 +1,6 @@
 # TODO
 
 - href nav (desk, mob, footer)
-- distribuer données des formations dans cartes (page d'accueil)
-- mettre en route les carrousels (page d'accueil)
 - distribuer les données des formations dans cartes (page formations)
 - filter les cartes (page formations)
 
@@ -36,3 +34,12 @@
 - carrousels (home page)
   - distributions des données des formations
   - animation "prev" & "next" carte
+
+## 18/04
+
+### HTML
+
+- ajout de la page <code>nos-cours-en-ligne.html</code>
+- correction des <code>nav</code>
+- ajout de lien vers <code>formation-details.html</code> depuis la première carte de <code>nos-formations.html</code> & <code>nos-cours-en-ligne.html</code>
+- ajout de lien vers les pages correspondantes sur les différents CTA

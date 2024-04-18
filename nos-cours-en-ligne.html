@@ -11,6 +11,35 @@
 		<link rel="stylesheet" href="./style/scss/formations/formations.css" />
 	</head>
 	<body>
+		<template id="templateFormationCard">
+			<a class="formationCard--container">
+				<div class="formationCard--top">
+					<img src="https://dummyimage.com/200x200/" alt="deco" />
+				</div>
+
+				<div class="formationCard--bottom">
+					<h3 class="title-size-smaller font-color-main">Lorem, ipsum.</h3>
+					<p class="font-size-small font-color-grey">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi
+						pariatur suscipit officiis dolore omnis nam.
+					</p>
+
+					<div class="formationCard--footer">
+						<div class="formationCard--duration icon-size-smaller">
+							<img src="./public/images/lhorloge_main.png" alt="icon" />
+							<p class="fonst-size-smaller font-color-main">33h</p>
+						</div>
+
+						<div class="formationCard--cta">
+							<button class="btn-cta btn-size-small btn-theme-transparent">
+								En savoir plus
+							</button>
+						</div>
+					</div>
+				</div>
+			</a>
+		</template>
+
 		<header>
 			<div class="banner--container">
 				<section class="banner--wrapper section--wrapper">
@@ -69,58 +98,91 @@
 							<img
 								src="./public/images/menu_white.png"
 								alt="icon"
-								id="menuMobileButton" />
+								id="buttonHamburger" />
 						</div>
 
 						<nav class="menu--nav--desktop">
-							<a href="./index.html" class="menu--link--desktop">FORMATIONS</a>
-							<a href="./nos-formation.html" class="menu--link--desktop"
+							<a
+								href="./nos-formations.html"
+								class="menu--link--desktop"
+								id="linkElementDeskFormations"
+								>FORMATIONS</a
+							>
+							<a
+								href="./nos-cours-en-ligne.html"
+								class="menu--link--desktop"
+								id="linkElementDeskCoursEnLigne"
 								>COURS EN LIGNE</a
 							>
-							<a href="./formation-details.html" class="menu--link--desktop"
+							<a
+								href="#"
+								class="menu--link--desktop"
+								id="linkElementDeskAPropos"
 								>&Agrave; PROPOS</a
 							>
-							<a href="#" class="menu--link--desktop">FINANCEMENT</a>
+							<a
+								href="#"
+								class="menu--link--desktop"
+								id="linkElementFinancement"
+								>FINANCEMENT</a
+							>
 							<a href="#" class="menu--link--desktop">BLOG</a>
-							<a href="#" class="menu--link--desktop">CONTACT</a>
+							<a
+								href="#"
+								class="menu--link--desktop"
+								id="linkElementDeskContact"
+								>CONTACT</a
+							>
 						</nav>
 					</div>
 
-					<div class="menu--container--mobile" id="menuMobileContainer">
+					<div class="menu--container--mobile" id="menuMobile">
 						<div class="menu--wrapper--mobile">
 							<div
 								class="menu--cross--container--mobile cursor icon-size-medium">
 								<img
 									src="./public/images/croix.png"
 									alt="icon"
-									id="menuMobileCrossButton" />
+									id="buttonCross" />
 							</div>
 
 							<nav class="menu--nav--mobile">
 								<a
 									href="./index.html"
-									class="menu--link--mobile font-size-larger font-color-black font-weight-bold"
+									class="menu--link--mobile"
+									id="linkElementDeskFormations"
+									>ACCUEIL</a
+								>
+								<a
+									href="./nos-formations.html"
+									class="menu--link--mobile"
+									id="linkElementDeskFormations"
 									>FORMATIONS</a
 								>
 								<a
-									href="./nos-formation.html"
-									class="menu--link--mobile font-size-larger font-color-black font-weight-bold"
+									href="./nos-cours-en-ligne.html"
+									class="menu--link--mobile"
+									id="linkElementDeskCoursEnLigne"
 									>COURS EN LIGNE</a
 								>
 								<a
-									href="./formation-details.html"
-									class="menu--link--mobile font-size-larger font-color-black font-weight-bold"
+									href="#"
+									class="menu--link--mobile"
+									id="linkElementDeskAPropos"
 									>&Agrave; PROPOS</a
 								>
 								<a
 									href="#"
-									class="menu--link--mobile font-size-larger font-color-black font-weight-bold"
-									>CONTACT</a
+									class="menu--link--mobile"
+									id="linkElementFinancement"
+									>FINANCEMENT</a
 								>
+								<a href="#" class="menu--link--mobile">BLOG</a>
 								<a
 									href="#"
-									class="menu--link--mobile font-size-larger font-color-black font-weight-bold"
-									>MON ESPACE</a
+									class="menu--link--mobile"
+									id="linkElementDeskContact"
+									>CONTACT</a
 								>
 							</nav>
 						</div>
@@ -130,7 +192,7 @@
 						<div class="hero--wrapper section--wrapper">
 							<div class="hero--content--container hero--content--formations">
 								<h1 class="title-size-larger font-color-white">
-									Nos formations
+									Nos Cours En Ligne
 								</h1>
 								<p class="font-size-medium font-color-white">
 									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -189,7 +251,7 @@
 
 			<section class="grid--container">
 				<div class="grid--wrapper section--wrapper">
-					<div class="formationCard--container">
+					<a href="./formation-details.html" class="formationCard--container">
 						<div class="formationCard--top">
 							<img src="https://dummyimage.com/200x200/" alt="deco" />
 						</div>
@@ -214,7 +276,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 
 					<div class="formationCard--container">
 						<div class="formationCard--top">
@@ -496,13 +558,12 @@
 					<h3 class="title-size-small font-color-white">Plan du site</h3>
 
 					<nav class="footer--nav">
-						<a href="./index.html" class="footer--link">Formations</a>
-						<a href="./nos-formation.html" class="footer--link"
+						<a href="./index.html" class="footer--link">Accueil</a>
+						<a href="./nos-formations.html" class="footer--link">Formations</a>
+						<a href="./nos-cours-en-ligne.html" class="footer--link"
 							>Cours en ligne</a
 						>
-						<a href="./formation-details.html" class="footer--link"
-							>&Agrave; propos</a
-						>
+						<a href="#" class="footer--link">&Agrave; propos</a>
 						<a href="#" class="footer--link">Financement</a>
 						<a href="#" class="footer--link">Blog</a>
 						<a href="#" class="footer--link">Contact</a>
@@ -515,4 +576,6 @@
 			</div>
 		</footer>
 	</body>
+
+	<script type="module" src="./src/main.js"></script>
 </html>

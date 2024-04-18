@@ -2,11 +2,17 @@ export function getPageCurrent() {
 	let pageCurrent;
 
 	switch (window.location.pathname) {
+		case "/":
+			pageCurrent = "Home";
+			break;
 		case "/index.html":
 			pageCurrent = "Home";
 			break;
 		case "/nos-formations.html":
 			pageCurrent = "Formations";
+			break;
+		case "/nos-cours-en-ligne.html":
+			pageCurrent = "CoursEnLigne";
 			break;
 		case "/formation-details.html":
 			pageCurrent = "FormationDetails";
